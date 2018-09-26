@@ -16,10 +16,22 @@ namespace miriamGame
         public Form1()
         {
             InitializeComponent();
+            _Form1 = this;
+        }
+        public static Form1 _Form1;
+        public void update(string message)
+        {
+            richTextBox1.AppendText("mess: " + message);
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Program sample = new Program();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Exit button
+
             MessageBox.Show("Goodbye");
             Environment.Exit(0);
 
@@ -27,17 +39,37 @@ namespace miriamGame
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This is not the droids you are looking for");
-            var psi = new ProcessStartInfo("shutdown", "/s /t 2");
-            psi.CreateNoWindow = true;
-            psi.UseShellExecute = false;
-            Process.Start(psi);
+            //No button
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This is very nice");
-            richTextBox1.AppendText("This was a very nice choice man\n");
+            //Yes button
+            //if ();
+            richTextBox1.AppendText("\n");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //Save button
+
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Eat food button
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Drink water button
+
+
         }
     }
 }
