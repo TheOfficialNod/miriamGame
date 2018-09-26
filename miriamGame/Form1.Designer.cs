@@ -36,18 +36,18 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(13, 13);
+            this.richTextBox1.Location = new System.Drawing.Point(15, 15);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(775, 379);
+            this.richTextBox1.Size = new System.Drawing.Size(903, 437);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 399);
+            this.button1.Location = new System.Drawing.Point(15, 460);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 39);
+            this.button1.Size = new System.Drawing.Size(141, 45);
             this.button1.TabIndex = 1;
             this.button1.Text = "Döda miriam";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,9 +55,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(654, 399);
+            this.button2.Location = new System.Drawing.Point(763, 460);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 39);
+            this.button2.Size = new System.Drawing.Size(155, 45);
             this.button2.TabIndex = 2;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(330, 399);
+            this.button3.Location = new System.Drawing.Point(386, 460);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 39);
+            this.button3.Size = new System.Drawing.Size(164, 45);
             this.button3.TabIndex = 3;
             this.button3.Text = "Inte döda miriam";
             this.button3.UseVisualStyleBackColor = true;
@@ -75,15 +75,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 519);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Miriam";
             this.ResumeLayout(false);
 
         }

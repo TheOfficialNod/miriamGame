@@ -21,7 +21,7 @@ namespace miriamGame
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Goodbye");
-            this.Close();
+            Environment.Exit(0);
 
         }
 
