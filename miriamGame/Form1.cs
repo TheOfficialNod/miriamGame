@@ -16,24 +16,44 @@ namespace miriamGame
         public Form1()
         {
             InitializeComponent();
-            _Form1 = this;
         }
-        public static Form1 _Form1;
-        public void update(string message)
-        {
-            richTextBox1.AppendText("mess: " + message);
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Program sample = new Program();
-        }
+
+		public void Superlooper()
+	    {
+			List<string> events = new List<string>();
+			events.Add("You find an abandoned caravan do you look to find something");
+			events.Add("You find an abandoned car do you want to search it");
+			events.Add("Theres a wanderer in your path do you approach him");
+
+			Random rnd = new Random();
+			int randomEvent = rnd.Next(0, 2); //Creates random number between 0 and 2
+
+			var firstItem = events[randomEvent];
+
+			int hunger = 15;
+			int thirst = 7;
+
+			if (hunger > 0 && thirst > 0)
+			{
+				string hungerStr = hunger.ToString();
+				string thirstStr = thirst.ToString();
+				richTextBox1.AppendText(firstItem);
+				richTextBox1.AppendText("\nYou have " + hungerStr + " hunger left\n" + "You have " + thirstStr + " thirst left\n");
+				hunger--;
+				thirst--;
+			}
+			else
+			{
+				richTextBox1.AppendText("You Died\n");
+			}
+		}
 
         private void button2_Click(object sender, EventArgs e)
         {
             //Exit button
 
             MessageBox.Show("Goodbye");
-            Environment.Exit(0);
+            this.Close();
 
         }
 
@@ -47,7 +67,7 @@ namespace miriamGame
         private void button1_Click(object sender, EventArgs e)
         {
             //Yes button
-            //if ();
+            //if () ;
             richTextBox1.AppendText("\n");
         }
 
@@ -71,5 +91,10 @@ namespace miriamGame
 
 
         }
-    }
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			Superlooper();
+		}
+	}
 }
