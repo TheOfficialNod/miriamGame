@@ -67,8 +67,15 @@ namespace miriamGame
         private void button1_Click(object sender, EventArgs e)
         {
             //Yes button
-            //if () ;
-            richTextBox1.AppendText("\n");
+            List<string> ifYes = new List<string>();
+            ifYes.Add("You found a piece of meat do you risk eating it\n");
+
+            if (ifYes[] == 0)
+            {
+
+            }
+
+            //richTextBox1.AppendText("\n");
         }
 
         private void button7_Click(object sender, EventArgs e)
